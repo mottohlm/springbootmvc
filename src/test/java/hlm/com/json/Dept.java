@@ -1,10 +1,14 @@
 package hlm.com.json;
 
+import java.math.BigDecimal;
+
 public class Dept {
 
 	private String deptName ;
     private Integer deptNo;
-    private String deptManager;
+    private Object deptManager;
+    private byte num;
+    private BigDecimal bigDecimal ;
 	public String getDeptName() {
 		return deptName;
 	}
@@ -17,11 +21,24 @@ public class Dept {
 	public void setDeptNo(Integer deptNo) {
 		this.deptNo = deptNo;
 	}
-	public String getDeptManager() {
+	public Object getDeptManager() {
 		return deptManager;
 	}
-	public void setDeptManager(String deptManager) {
+	public void setDeptManager(Object deptManager) {
 		this.deptManager = deptManager;
 	}
+	public byte getNum() {
+		return num;
+	}
+	public void setNum(byte num) {
+		this.num = num;
+	}
+	public BigDecimal getBigDecimal() {
+		return bigDecimal;
+	}
+	public void setBigDecimal(BigDecimal bigDecimal) {
+		this.bigDecimal = bigDecimal;
+	}
+	
     
 }
