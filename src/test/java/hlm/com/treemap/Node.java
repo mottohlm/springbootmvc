@@ -19,6 +19,8 @@ public class Node {
 
     public static final boolean BLANK = false ;
     public static final boolean RED = true ;
+    public static final boolean LEFT = false ;
+    public static final boolean RIGHT = true ;
 
     public Node() { }
 

@@ -28,6 +28,7 @@ public class TestTreeMap {
         }
         System.out.println(mtm.get(5));
         System.out.println(mtm.get(8));
+        System.out.println(mtm.getSize());
 
 
     }
