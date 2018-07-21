@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 //声明这是一个切面类
 @Aspect
-public class AopConfig {
+public class AopConfig11 {
 	//声明了一个表达式，描述要织入的目标的特性，如下样子就是想说com.hlm.controller.包下的类都会被织入该切面
 	//@Around("@within(org.springframework.stereotype.Controller)")
 	public Object simpleAop(final ProceedingJoinPoint pjp) throws Throwable{
