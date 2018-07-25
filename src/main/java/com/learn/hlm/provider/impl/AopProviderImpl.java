@@ -18,15 +18,13 @@ public class AopProviderImpl implements AopProvider {
     private AopBo bo2 = new  AopBo(2,"bo2", 12, "女" ,null) ;
     private AopBo bo3 = new  AopBo(3,"bo3", 13, "男" ,null) ;
     private AopBo bo4 = new  AopBo(4,"bo4", 14, "女" ,null) ;
-
-
-
+    private volatile int count = 4 ;
 
 
 
     @Override
     public void updateAopBo(AopBo bo) {
-
+        log.info("进入到updateAopBo方法！");
 
         if(bo != null && bo.getId() != null){
 
@@ -51,7 +49,7 @@ public class AopProviderImpl implements AopProvider {
 
     @Override
     public void deleteAopBo(AopBo bo) {
-
+        log.info("进入到deleteAopBo方法！");
         if(bo != null && bo.getId() != null){
 
             //模仿删除
@@ -72,6 +70,7 @@ public class AopProviderImpl implements AopProvider {
 
     @Override
     public AopBo getAopBoById(Integer id) {
+        log.info("进入到getAopBoById方法！");
         log.info("查询数据库中的结果！");
         AopBo bo = null ;
         if(id != null){
@@ -96,6 +95,7 @@ public class AopProviderImpl implements AopProvider {
 
     @Override
     public List<AopBo> findAopBo(String name, String sex) {
+        log.info("进入到findAopBo方法！");
         log.info("查询数据库中的结果！");
         name = name==null?"":name;
         sex =  sex ==null?"":sex;

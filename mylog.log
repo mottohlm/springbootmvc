@@ -700,3 +700,642 @@ java.lang.NullPointerException: null
 2018-07-21 17:22:59.370  INFO 3196 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
 2018-07-21 17:22:59.370  INFO 3196 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
 2018-07-21 17:22:59.370  INFO 3196 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:12.190  INFO 13496 --- [main] com.HlmApplication                       : Starting HlmApplication on QPDSWBAGIE540DL with PID 13496 (E:\real-workspace\GitCheckout\springbootmvc\target\classes started by Administrator in E:\real-workspace\GitCheckout\springbootmvc)
+2018-07-24 13:27:12.192  INFO 13496 --- [main] com.HlmApplication                       : No active profile set, falling back to default profiles: default
+2018-07-24 13:27:12.231  INFO 13496 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@159f197: startup date [Tue Jul 24 13:27:12 CST 2018]; root of context hierarchy
+2018-07-24 13:27:13.482  INFO 13496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-24 13:27:14.069  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$69ea4650] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.172  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$b2fc7c6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.197  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$a7704112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.219  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.244  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.254  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.257  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$5801dd6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.270  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.282  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$7f04049a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.403  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.471  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.509  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.514  INFO 13496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:27:14.864  INFO 13496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-24 13:27:14.884  INFO 13496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-24 13:27:14.884  INFO 13496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-07-24 13:27:14.887  INFO 13496 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Program Files\Java\jdk1.8.0_60\jre\bin;D:\worktools\Program Files\apache-maven-3.3.9\bin;D:\worktools\Program Files\em;D:\worktools\Program Files\SVN\bin;D:\worktools\Program Files\GitExtensions\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Users\Administrator\AppData\Local\Programs\Fiddler;.]
+2018-07-24 13:27:14.977  INFO 13496 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-24 13:27:14.978  INFO 13496 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2747 ms
+2018-07-24 13:27:15.125  INFO 13496 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-24 13:27:15.139  INFO 13496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-24 13:27:15.140  INFO 13496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-24 13:27:15.141  INFO 13496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-24 13:27:15.141  INFO 13496 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-24 13:27:16.339  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@159f197: startup date [Tue Jul 24 13:27:12 CST 2018]; root of context hierarchy
+2018-07-24 13:27:16.349  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-07-24 13:27:16.350  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-24 13:27:16.350  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-07-24 13:27:16.413  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connection/sendGet]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.hlm.controller.ConnectionController.sendGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.net.URISyntaxException
+2018-07-24 13:27:16.415  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/count]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.HlmUserController.userCount(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:27:16.415  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logon]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.UsersController.logon(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:27:16.416  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String com.hlm.controller.UsersController.getOther(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:27:16.417  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/env]}" onto public java.lang.Object com.hlm.redis.RedisTestController.env(java.lang.String)
+2018-07-24 13:27:16.417  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getById]}" onto public java.lang.Object com.hlm.redis.RedisTestController.getById(java.lang.Long)
+2018-07-24 13:27:16.417  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aop/test]}" onto public org.springframework.http.ResponseEntity com.learn.hlm.AopController.test()
+2018-07-24 13:27:16.420  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:27:16.421  INFO 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:27:16.486  INFO 13496 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:27:16.486  INFO 13496 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:27:16.506  INFO 13496 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-07-24 13:27:16.506  INFO 13496 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-24 13:27:16.506  INFO 13496 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-07-24 13:27:16.533  INFO 13496 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:27:16.620  INFO 13496 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-07-24 13:27:16.834  INFO 13496 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-24 13:27:16.990  INFO 13496 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-24 13:27:16.991  INFO 13496 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-24 13:27:16.998  INFO 13496 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-24 13:27:17.034  INFO 13496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-24 13:27:17.037  INFO 13496 --- [main] com.HlmApplication                       : Started HlmApplication in 5.228 seconds (JVM running for 6.651)
+2018-07-24 13:27:42.877  INFO 13496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-24 13:27:42.878  INFO 13496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-24 13:27:42.897  INFO 13496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-07-24 13:27:42.919  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.923  INFO 13496 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:27:42.923  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:27:42.923  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.923  INFO 13496 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:27:42.923  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:27:42.924  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.924  INFO 13496 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:27:42.924  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:27:42.924  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.924  INFO 13496 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:27:42.924  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:27:42.924  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.925  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.925  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.925  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.925  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.925  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.925  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.928  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.928  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.928  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.928  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.929  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.929  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.929  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.929  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.929  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:27:42.929  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:27:42.929  INFO 13496 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.523  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.523  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.523  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.523  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.524  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.524  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.524  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.524  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.524  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.525  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.528  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.528  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.529  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.529  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.529  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.529  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:28:11.529  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:28:11.529  INFO 13496 --- [http-nio-8080-exec-3] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:30:11.809  INFO 13240 --- [main] com.HlmApplication                       : Starting HlmApplication on QPDSWBAGIE540DL with PID 13240 (E:\real-workspace\GitCheckout\springbootmvc\target\classes started by Administrator in E:\real-workspace\GitCheckout\springbootmvc)
+2018-07-24 13:30:11.811  INFO 13240 --- [main] com.HlmApplication                       : No active profile set, falling back to default profiles: default
+2018-07-24 13:30:11.855  INFO 13240 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Tue Jul 24 13:30:11 CST 2018]; root of context hierarchy
+2018-07-24 13:30:13.016  INFO 13240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-24 13:30:13.542  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fe30f52b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.627  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$47432b49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.643  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$3bb6efed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.657  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.666  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.675  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.679  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$ec488c47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.687  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.694  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$134ab375] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.766  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.826  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.853  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:13.856  INFO 13240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:30:14.167  INFO 13240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-24 13:30:14.186  INFO 13240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-24 13:30:14.186  INFO 13240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-07-24 13:30:14.189  INFO 13240 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Program Files\Java\jdk1.8.0_60\jre\bin;D:\worktools\Program Files\apache-maven-3.3.9\bin;D:\worktools\Program Files\em;D:\worktools\Program Files\SVN\bin;D:\worktools\Program Files\GitExtensions\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Users\Administrator\AppData\Local\Programs\Fiddler;.]
+2018-07-24 13:30:14.273  INFO 13240 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-24 13:30:14.273  INFO 13240 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2418 ms
+2018-07-24 13:30:14.415  INFO 13240 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-24 13:30:14.419  INFO 13240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-24 13:30:14.419  INFO 13240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-24 13:30:14.419  INFO 13240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-24 13:30:14.420  INFO 13240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-24 13:30:15.040  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Tue Jul 24 13:30:11 CST 2018]; root of context hierarchy
+2018-07-24 13:30:15.047  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-07-24 13:30:15.048  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-24 13:30:15.048  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-07-24 13:30:15.104  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connection/sendGet]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.hlm.controller.ConnectionController.sendGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.net.URISyntaxException
+2018-07-24 13:30:15.105  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/count]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.HlmUserController.userCount(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:30:15.106  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String com.hlm.controller.UsersController.getOther(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:30:15.106  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logon]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.UsersController.logon(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:30:15.107  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/env]}" onto public java.lang.Object com.hlm.redis.RedisTestController.env(java.lang.String)
+2018-07-24 13:30:15.107  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getById]}" onto public java.lang.Object com.hlm.redis.RedisTestController.getById(java.lang.Long)
+2018-07-24 13:30:15.107  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aop/test]}" onto public org.springframework.http.ResponseEntity com.learn.hlm.AopController.test()
+2018-07-24 13:30:15.110  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:30:15.111  INFO 13240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:30:15.171  INFO 13240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:30:15.171  INFO 13240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:30:15.196  INFO 13240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-07-24 13:30:15.196  INFO 13240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-24 13:30:15.196  INFO 13240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-07-24 13:30:15.229  INFO 13240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:30:15.294  INFO 13240 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-07-24 13:30:15.537  INFO 13240 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-24 13:30:15.692  INFO 13240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-24 13:30:15.693  INFO 13240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-24 13:30:15.700  INFO 13240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-24 13:30:15.732  INFO 13240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-24 13:30:15.735  INFO 13240 --- [main] com.HlmApplication                       : Started HlmApplication in 4.254 seconds (JVM running for 4.839)
+2018-07-24 13:30:22.324  INFO 13240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-24 13:30:22.325  INFO 13240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-24 13:30:22.346  INFO 13240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-07-24 13:30:22.365  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.369  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.369  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.369  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.370  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get1
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.371  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:30:22.372  INFO 13240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:30:22.373  INFO 13240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:30:22.384 ERROR 13240 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.learn.hlm.AopController.testGet(AopController.java:52) ~[classes/:na]
+	at com.learn.hlm.AopController.test(AopController.java:39) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+
+2018-07-24 13:31:51.027  INFO 14972 --- [main] com.HlmApplication                       : Starting HlmApplication on QPDSWBAGIE540DL with PID 14972 (E:\real-workspace\GitCheckout\springbootmvc\target\classes started by Administrator in E:\real-workspace\GitCheckout\springbootmvc)
+2018-07-24 13:31:51.030  INFO 14972 --- [main] com.HlmApplication                       : No active profile set, falling back to default profiles: default
+2018-07-24 13:31:51.074  INFO 14972 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77167fb7: startup date [Tue Jul 24 13:31:51 CST 2018]; root of context hierarchy
+2018-07-24 13:31:52.233  INFO 14972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-24 13:31:52.721  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b8d9d6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.810  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$849fd38d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.825  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$79139831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.840  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.850  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.857  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.861  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$29a5348b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.868  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.875  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$50a75bb9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:52.951  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:53.020  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:53.050  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:53.054  INFO 14972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:31:53.300  INFO 14972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-24 13:31:53.389  INFO 14972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-24 13:31:53.389  INFO 14972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-07-24 13:31:53.391  INFO 14972 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Program Files\Java\jdk1.8.0_60\jre\bin;D:\worktools\Program Files\apache-maven-3.3.9\bin;D:\worktools\Program Files\em;D:\worktools\Program Files\SVN\bin;D:\worktools\Program Files\GitExtensions\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Users\Administrator\AppData\Local\Programs\Fiddler;.]
+2018-07-24 13:31:53.471  INFO 14972 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-24 13:31:53.471  INFO 14972 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2397 ms
+2018-07-24 13:31:53.612  INFO 14972 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-24 13:31:53.616  INFO 14972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-24 13:31:53.617  INFO 14972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-24 13:31:53.617  INFO 14972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-24 13:31:53.617  INFO 14972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-24 13:31:54.238  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77167fb7: startup date [Tue Jul 24 13:31:51 CST 2018]; root of context hierarchy
+2018-07-24 13:31:54.246  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-07-24 13:31:54.246  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-24 13:31:54.246  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-07-24 13:31:54.299  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connection/sendGet]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.hlm.controller.ConnectionController.sendGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.net.URISyntaxException
+2018-07-24 13:31:54.300  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/count]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.HlmUserController.userCount(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:31:54.300  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String com.hlm.controller.UsersController.getOther(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:31:54.301  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logon]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.UsersController.logon(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:31:54.301  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/env]}" onto public java.lang.Object com.hlm.redis.RedisTestController.env(java.lang.String)
+2018-07-24 13:31:54.301  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getById]}" onto public java.lang.Object com.hlm.redis.RedisTestController.getById(java.lang.Long)
+2018-07-24 13:31:54.302  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aop/test]}" onto public org.springframework.http.ResponseEntity com.learn.hlm.AopController.test()
+2018-07-24 13:31:54.305  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:31:54.305  INFO 14972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:31:54.357  INFO 14972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:31:54.358  INFO 14972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:31:54.377  INFO 14972 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-07-24 13:31:54.378  INFO 14972 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-24 13:31:54.378  INFO 14972 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-07-24 13:31:54.407  INFO 14972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:31:54.464  INFO 14972 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-07-24 13:31:54.678  INFO 14972 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-24 13:31:54.857  INFO 14972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-24 13:31:54.858  INFO 14972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-24 13:31:54.863  INFO 14972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-24 13:31:54.899  INFO 14972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-24 13:31:54.901  INFO 14972 --- [main] com.HlmApplication                       : Started HlmApplication in 4.168 seconds (JVM running for 4.742)
+2018-07-24 13:32:01.795  INFO 14972 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-24 13:32:01.796  INFO 14972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-24 13:32:01.814  INFO 14972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-07-24 13:32:01.834  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.837  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.837  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.837  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.837  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.837  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.837  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get1
+2018-07-24 13:32:01.838  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.839  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:32:01.840  INFO 14972 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:32:01.849 ERROR 14972 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.learn.hlm.AopController.testFind(AopController.java:80) ~[classes/:na]
+	at com.learn.hlm.AopController.test(AopController.java:40) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+
+2018-07-24 13:33:45.763  INFO 5948 --- [main] com.HlmApplication                       : Starting HlmApplication on QPDSWBAGIE540DL with PID 5948 (E:\real-workspace\GitCheckout\springbootmvc\target\classes started by Administrator in E:\real-workspace\GitCheckout\springbootmvc)
+2018-07-24 13:33:45.766  INFO 5948 --- [main] com.HlmApplication                       : No active profile set, falling back to default profiles: default
+2018-07-24 13:33:45.846  INFO 5948 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12d4bf7e: startup date [Tue Jul 24 13:33:45 CST 2018]; root of context hierarchy
+2018-07-24 13:33:46.992  INFO 5948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-24 13:33:47.471  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$50184c12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.553  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$992a8230] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.571  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$8d9e46d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.586  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.595  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.603  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.605  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$3e2fe32e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.614  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.620  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$65320a5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.690  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.751  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.775  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:47.778  INFO 5948 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:33:48.086  INFO 5948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-24 13:33:48.103  INFO 5948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-24 13:33:48.103  INFO 5948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-07-24 13:33:48.105  INFO 5948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Program Files\Java\jdk1.8.0_60\jre\bin;D:\worktools\Program Files\apache-maven-3.3.9\bin;D:\worktools\Program Files\em;D:\worktools\Program Files\SVN\bin;D:\worktools\Program Files\GitExtensions\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Users\Administrator\AppData\Local\Programs\Fiddler;.]
+2018-07-24 13:33:48.200  INFO 5948 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-24 13:33:48.200  INFO 5948 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2360 ms
+2018-07-24 13:33:48.338  INFO 5948 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-24 13:33:48.342  INFO 5948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-24 13:33:48.343  INFO 5948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-24 13:33:48.343  INFO 5948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-24 13:33:48.343  INFO 5948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-24 13:33:48.955  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12d4bf7e: startup date [Tue Jul 24 13:33:45 CST 2018]; root of context hierarchy
+2018-07-24 13:33:48.964  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-07-24 13:33:48.965  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-24 13:33:48.965  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-07-24 13:33:49.016  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connection/sendGet]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.hlm.controller.ConnectionController.sendGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.net.URISyntaxException
+2018-07-24 13:33:49.017  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/count]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.HlmUserController.userCount(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:33:49.017  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logon]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.UsersController.logon(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:33:49.018  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String com.hlm.controller.UsersController.getOther(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:33:49.018  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/env]}" onto public java.lang.Object com.hlm.redis.RedisTestController.env(java.lang.String)
+2018-07-24 13:33:49.019  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getById]}" onto public java.lang.Object com.hlm.redis.RedisTestController.getById(java.lang.Long)
+2018-07-24 13:33:49.019  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aop/test]}" onto public org.springframework.http.ResponseEntity com.learn.hlm.AopController.test()
+2018-07-24 13:33:49.021  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:33:49.022  INFO 5948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:33:49.075  INFO 5948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:33:49.075  INFO 5948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:33:49.095  INFO 5948 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-07-24 13:33:49.096  INFO 5948 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-24 13:33:49.096  INFO 5948 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-07-24 13:33:49.124  INFO 5948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:33:49.180  INFO 5948 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-07-24 13:33:49.383  INFO 5948 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-24 13:33:49.534  INFO 5948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-24 13:33:49.535  INFO 5948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-24 13:33:49.540  INFO 5948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-24 13:33:49.570  INFO 5948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-24 13:33:49.573  INFO 5948 --- [main] com.HlmApplication                       : Started HlmApplication in 4.1 seconds (JVM running for 4.707)
+2018-07-24 13:33:54.814  INFO 5948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-24 13:33:54.814  INFO 5948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-24 13:33:54.832  INFO 5948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-07-24 13:33:54.853  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.856  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.856  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.856  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.856  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.856  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.856  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get1
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:33:54.857  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.858  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.859  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.860  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:33:54.862  INFO 5948 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:33:54.862  INFO 5948 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:35.725  INFO 5240 --- [main] com.HlmApplication                       : Starting HlmApplication on QPDSWBAGIE540DL with PID 5240 (E:\real-workspace\GitCheckout\springbootmvc\target\classes started by Administrator in E:\real-workspace\GitCheckout\springbootmvc)
+2018-07-24 13:36:35.728  INFO 5240 --- [main] com.HlmApplication                       : No active profile set, falling back to default profiles: default
+2018-07-24 13:36:35.779  INFO 5240 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Jul 24 13:36:35 CST 2018]; root of context hierarchy
+2018-07-24 13:36:36.933  INFO 5240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-07-24 13:36:37.451  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$307ae9ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.537  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$798d1fc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.554  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$6e00e46d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.570  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.580  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.588  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.591  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$1e9280c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.598  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.605  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$4594a7f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.675  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.733  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.758  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:37.763  INFO 5240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-24 13:36:38.094  INFO 5240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-24 13:36:38.113  INFO 5240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-24 13:36:38.113  INFO 5240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-07-24 13:36:38.116  INFO 5240 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Program Files\Java\jdk1.8.0_60\jre\bin;D:\worktools\Program Files\apache-maven-3.3.9\bin;D:\worktools\Program Files\em;D:\worktools\Program Files\SVN\bin;D:\worktools\Program Files\GitExtensions\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Users\Administrator\AppData\Local\Programs\Fiddler;.]
+2018-07-24 13:36:38.198  INFO 5240 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-24 13:36:38.199  INFO 5240 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2421 ms
+2018-07-24 13:36:38.333  INFO 5240 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-24 13:36:38.336  INFO 5240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-24 13:36:38.337  INFO 5240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-24 13:36:38.337  INFO 5240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-24 13:36:38.337  INFO 5240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-24 13:36:38.958  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Tue Jul 24 13:36:35 CST 2018]; root of context hierarchy
+2018-07-24 13:36:38.969  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-07-24 13:36:38.970  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-24 13:36:38.970  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-07-24 13:36:39.036  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connection/sendGet]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.hlm.controller.ConnectionController.sendGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.net.URISyntaxException
+2018-07-24 13:36:39.037  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/count]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.HlmUserController.userCount(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:36:39.037  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String com.hlm.controller.UsersController.getOther(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:36:39.038  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logon]}" onto public org.springframework.web.servlet.ModelAndView com.hlm.controller.UsersController.logon(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:36:39.038  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/env]}" onto public java.lang.Object com.hlm.redis.RedisTestController.env(java.lang.String)
+2018-07-24 13:36:39.038  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getById]}" onto public java.lang.Object com.hlm.redis.RedisTestController.getById(java.lang.Long)
+2018-07-24 13:36:39.039  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/aop/test]}" onto public org.springframework.http.ResponseEntity com.learn.hlm.AopController.test()
+2018-07-24 13:36:39.042  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-24 13:36:39.042  INFO 5240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-24 13:36:39.101  INFO 5240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:36:39.101  INFO 5240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:36:39.124  INFO 5240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-07-24 13:36:39.124  INFO 5240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-24 13:36:39.124  INFO 5240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-07-24 13:36:39.156  INFO 5240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-24 13:36:39.224  INFO 5240 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-07-24 13:36:39.450  INFO 5240 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-07-24 13:36:39.615  INFO 5240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-24 13:36:39.616  INFO 5240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-24 13:36:39.620  INFO 5240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-24 13:36:39.652  INFO 5240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-24 13:36:39.655  INFO 5240 --- [main] com.HlmApplication                       : Started HlmApplication in 4.307 seconds (JVM running for 4.992)
+2018-07-24 13:36:50.981  INFO 5240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-24 13:36:50.982  INFO 5240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-24 13:36:51.001  INFO 5240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-07-24 13:36:51.019  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.023  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到getAopBoById方法！
+2018-07-24 13:36:51.023  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.023  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.023  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.023  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到getAopBoById方法！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到findAopBo方法！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到findAopBo方法！
+2018-07-24 13:36:51.024  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get1
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到updateAopBo方法！
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:36:51.025  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到updateAopBo方法！
+2018-07-24 13:36:51.026  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.026  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到getAopBoById方法！
+2018-07-24 13:36:51.026  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.026  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.026  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到getAopBoById方法！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到findAopBo方法！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.028  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到findAopBo方法！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 缓存命中结果！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:get2
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:finbo
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 清除缓存 key:fin男
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到deleteAopBo方法！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到getAopBoById方法！
+2018-07-24 13:36:51.029  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.030  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 查询缓存中是否有结果！
+2018-07-24 13:36:51.030  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 进入到findAopBo方法！
+2018-07-24 13:36:51.030  INFO 5240 --- [http-nio-8080-exec-1] c.l.hlm.provider.impl.AopProviderImpl    : 查询数据库中的结果！
+2018-07-24 13:36:51.030  INFO 5240 --- [http-nio-8080-exec-1] com.learn.hlm.aop.AopConfig              : 对查询结果进行缓存！
