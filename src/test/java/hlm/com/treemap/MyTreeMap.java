@@ -61,7 +61,8 @@ public class MyTreeMap  {
      * @return
      */
     public Object get(Object k){
-        Node node = get(this.root ,k);
+
+        Node node = get(this.root ,hash(k));
         return node==null? null : node.getValue() ;
     }
 
@@ -71,7 +72,7 @@ public class MyTreeMap  {
      * @return
      */
     public Object remove(Object k){
-        Node node = get(this.root ,k);
+        Node node = get(this.root ,hash(k));
         if(node == null){
             return null ;
         }
@@ -81,13 +82,14 @@ public class MyTreeMap  {
     }
 
 
-    private Node get(Node node ,Object k){
+
+    private Node get(Node node ,int k){
         if(node == null){
             return null;
         }
-        int tarkey = hash(k) ;
+        int tarkey = k ;
         int rootkey = hash(node.getKey());
-        //命出马上返回
+        //命中马上返回
         if(tarkey == rootkey){
             return node ;
         }
@@ -102,7 +104,6 @@ public class MyTreeMap  {
 
         return null ;
     }
-
     /**
      * 返回root的中序遍历
      * @return
@@ -203,6 +204,7 @@ public class MyTreeMap  {
         if(node == null ){
             return null ;
         }
+
         Object targetKey = node.getKey();
         int tarint = hash(targetKey);
         Object rootKey = root.getKey();
@@ -247,7 +249,10 @@ public class MyTreeMap  {
      * @return
      */
     private int hash(Object k){
-        return k==null? 0 : k.hashCode();
+        if(k==null){
+           throw new RuntimeException("key can not be null") ;
+        }
+        return k.hashCode();
     }
 
     /**
@@ -416,7 +421,8 @@ public class MyTreeMap  {
      * @return
      */
     private boolean checkLR(Node root ,Node p_root){
-        if(hash(root.getKey())<hash(p_root.getKey())){
+        //if(hash(root.getKey())<hash(p_root.getKey())){
+        if(p_root.getLeft() == root ){
             return Node.LEFT ;
         }
         else{
