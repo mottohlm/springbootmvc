@@ -260,23 +260,21 @@ public class MyTreeMap  {
      */
     private void turnRight(Node node){
         Node root = node.getParent();
-        Node p_root = root.getParent();
+       // Node p_root = root.getParent();
 
-        //父节点取祖父的你节点
-        root.setParent(p_root.getParent());
-        //祖父的父节点变成了父节点
-        p_root.setParent(root);
-        //祖父的右节点没变，但左节点变为父节点的右节点
-        p_root.setLeft(root.getRight());
-        //父节点的右节点变为祖 父节点
-        root.setRight(p_root);
-        if(p_root.getParent()!= null){
+        node.setParent(root.getParent());
+        node.setRight(root);
+        root.setParent(node);
+        root.setLeft(null);
+        if(node.getParent()!= null){
             //左支
-            if(!checkLR(root,p_root.getParent())){
-                p_root.getParent().setLeft(root);
+            if(Node.LEFT == checkLR(node,node.getParent())){
+                node.getParent().setLeft(node);
             }else{
-                p_root.getParent().setRight(root);
+                node.getParent().setRight(node);
             }
+        }else{//说明遇到根节点了
+            this.root = node ;
         }
 
     }
@@ -285,26 +283,22 @@ public class MyTreeMap  {
      */
     private void turnLeft(Node node){
         Node root = node.getParent();
-        Node p_root = root.getParent();
+       // Node p_root = root.getParent();
 
-        node.setParent(p_root.getParent());
+        node.setParent(root.getParent());
         node.setLeft(root);
-        node.setRight(p_root);
-
         root.setParent(node);
-
         root.setRight(null);
 
-        p_root.setParent(node);
-        p_root.setLeft(null);
-
-        if(p_root.getParent()!= null){
+        if(node.getParent()!= null){
             //左支
-            if(!checkLR(node,p_root.getParent())){
-                p_root.getParent().setLeft(node);
+            if(Node.LEFT == checkLR(node,node.getParent())){
+                node.getParent().setLeft(node);
             }else{
-                p_root.getParent().setRight(node);
+                node.getParent().setRight(node);
             }
+        }else{//说明遇到根节点了
+            this.root = node ;
         }
 
     }
@@ -320,19 +314,24 @@ public class MyTreeMap  {
             node.setColor(Node.BLANK);
         }
         //左支
-       else if(!checkLR(node,node.getParent())){
+       else if(Node.LEFT == checkLR(node,node.getParent())){
             //父节点为黑时，直接将其插入，颜色置为红（并无产生新高度，只是该左支没满）
-            if(!node.getParent().getColor()){
+            if(Node.BLANK == node.getParent().getColor()){
                 node.setColor(Node.RED);
             }
             //如果父节点为红时，那么将按情况处理
             //父节点为红时,其祖父节点是一定存在的
-            else if(node.getParent().getColor()){
+            else if(Node.RED == node.getParent().getColor()){
                     Node root = node.getParent();
                     Node p_root = root.getParent();
+                    node.setColor(Node.BLANK);
+                    root.setColor(Node.BLANK);
+                    p_root.setColor(Node.BLANK);
+                    turnRight(root);
+                    fixBalance(root);
 
                     //如果其祖你节点不存在右分支，父节点也不存在右分支，也说明该父节点为叶子节点，该变换了
-                    if( p_root.getRight()==null &&root.getRight() == null){
+                   /* if( p_root.getRight()==null &&root.getRight() == null){
                         //使用右旋变换，将父节点上升，在此之前先将颜色全部设为黑
                         node.setColor(Node.BLANK);
                         root.setColor(Node.BLANK);
@@ -343,48 +342,48 @@ public class MyTreeMap  {
                     }else{//其他情况直接插入,比如:
                         //1.如果其祖父节点的存在右分支，那说明该父节点并非叶子节点，可支持直接添加为黑色
                         //2.如果其父节点存在右分支，也说明该父节点并非叶子节点，可支持直接添加为黑色
-                        node.setColor(Node.RED);
-                    }
+                        node.setColor(Node.BLANK);
+                    }*/
 
             }
 
 
         }
         //右支
-       else if(checkLR(node,node.getParent())){
+       else if(Node.RIGHT == checkLR(node,node.getParent())){
             Node root = node.getParent();
             Node p_root = root.getParent();
-            //原来只有一个节点并且插入的是右支时，那就得换一个根位置 ，并且原来根就成左支并且是红色
-           if(p_root == null){
-               node.setParent(root.getParent());
-               node.setLeft(root);
-               root.setParent(node);
-               root.setRight(null);
-               root.setColor(Node.RED);
-           }
-            else if(root.getColor() && root.getLeft() == null
-                    && root.getParent().getRight() == null){
-                node.setColor(Node.BLANK);
-                root.setColor(Node.BLANK);
+            if(p_root==null && Node.BLANK == root.getColor()){
+
+            }
+            if(Node.BLANK == root.getColor()
+                    && root == p_root.getLeft())
+            {
+
+                turnLeft(node);
+                turnRight(root);
+                fixBalance(root);
+
+            }
+            else if(Node.BLANK == root.getColor()
+                    && root == p_root.getRight())
+            {
                 p_root.setColor(Node.BLANK);
                 turnLeft(node);
-
-               fixBalance(node);
+                fixBalance(root);
 
             }
-            else if(!root.getColor() && root.getLeft()==null){
-               node.setParent(root.getParent());
-               node.setLeft(root);
-               root.setParent(node);
-               root.setRight(null);
-               root.setColor(Node.RED);
-               //右支
-               if(checkLR(node,p_root)){
-                   p_root.setRight(node);
-               }else{
-                   p_root.setLeft(node);
-               }
+            //父节点为红色,则该父节点肯定为祖父的左支
+            else if(Node.RED == root.getColor() ){
+
+                root.setColor(Node.BLANK);
+                turnLeft(node);
+                turnRight(root);
+                fixBalance(root);
             }
+            else {
+                node.setColor(Node.BLANK);
+           }
         }
 
     }
@@ -421,8 +420,8 @@ public class MyTreeMap  {
      * @return
      */
     private boolean checkLR(Node root ,Node p_root){
-        //if(hash(root.getKey())<hash(p_root.getKey())){
-        if(p_root.getLeft() == root ){
+        if(hash(root.getKey())<hash(p_root.getKey())){
+        //if(p_root.getLeft() == root ){
             return Node.LEFT ;
         }
         else{
