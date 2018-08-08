@@ -263,9 +263,10 @@ public class MyTreeMap  {
        // Node p_root = root.getParent();
 
         node.setParent(root.getParent());
+        root.setLeft(node.getRight());
         node.setRight(root);
         root.setParent(node);
-        root.setLeft(null);
+
         if(node.getParent()!= null){
             //左支
             if(Node.LEFT == checkLR(node,node.getParent())){
@@ -286,9 +287,9 @@ public class MyTreeMap  {
        // Node p_root = root.getParent();
 
         node.setParent(root.getParent());
+        root.setRight(node.getLeft());
         node.setLeft(root);
         root.setParent(node);
-        root.setRight(null);
 
         if(node.getParent()!= null){
             //左支
@@ -315,62 +316,64 @@ public class MyTreeMap  {
         }
         //左支
        else if(Node.LEFT == checkLR(node,node.getParent())){
-            //父节点为黑时，直接将其插入，颜色置为红（并无产生新高度，只是该左支没满）
-            if(Node.BLANK == node.getParent().getColor()){
+            //父节点为黑时，如果无左子节点或左子节点为黑，直接颜色置为红
+            if(Node.BLANK == node.getParent().getColor() && (
+                    (node.getLeft() !=null && node.getLeft().getColor()==Node.BLANK)
+                            ||node.getLeft() == null)){
                 node.setColor(Node.RED);
             }
-            //如果父节点为红时，那么将按情况处理
+            //父节点为黑时，但其左子节点为红，由于不能连续两红
+            else if(Node.BLANK == node.getParent().getColor() &&
+                    node.getLeft() !=null && node.getLeft().getColor()==Node.RED ){
+                node.getLeft().setColor(Node.BLANK);
+                turnRight(node);
+                fixBalance(node);
+
+            }
             //父节点为红时,其祖父节点是一定存在的
+            //此时父节点那一层肯定是满的，只有进行变换了，看情况如何变换
             else if(Node.RED == node.getParent().getColor()){
                     Node root = node.getParent();
-                    Node p_root = root.getParent();
-                    node.setColor(Node.BLANK);
                     root.setColor(Node.BLANK);
-                    p_root.setColor(Node.BLANK);
                     turnRight(root);
                     fixBalance(root);
-
-                    //如果其祖你节点不存在右分支，父节点也不存在右分支，也说明该父节点为叶子节点，该变换了
-                   /* if( p_root.getRight()==null &&root.getRight() == null){
-                        //使用右旋变换，将父节点上升，在此之前先将颜色全部设为黑
-                        node.setColor(Node.BLANK);
-                        root.setColor(Node.BLANK);
-                        p_root.setColor(Node.BLANK);
-                        turnRight(node);
-                        fixBalance(node.getParent());
-
-                    }else{//其他情况直接插入,比如:
-                        //1.如果其祖父节点的存在右分支，那说明该父节点并非叶子节点，可支持直接添加为黑色
-                        //2.如果其父节点存在右分支，也说明该父节点并非叶子节点，可支持直接添加为黑色
-                        node.setColor(Node.BLANK);
-                    }*/
-
             }
 
 
         }
         //右支
-       else if(Node.RIGHT == checkLR(node,node.getParent())){
+       /*else if(Node.RIGHT == checkLR(node,node.getParent())){
             Node root = node.getParent();
             Node p_root = root.getParent();
-            if(p_root==null && Node.BLANK == root.getColor()){
-
-            }
-            if(Node.BLANK == root.getColor()
-                    && root == p_root.getLeft())
-            {
+            //父节点为根节点,它的左支为黑或者不存在时,那只需左旋及变色即可
+            if(p_root==null &&(node.getLeft() == null || node.getLeft().getColor() != Node.RED)&& (
+                    (p_root.getLeft()!=null &&  p_root.getLeft().getColor() == Node.BLANK)
+                            ||p_root.getLeft()==null)){
 
                 turnLeft(node);
-                turnRight(root);
-                fixBalance(root);
+                root.setColor(Node.RED);
+            }
+            //父节点为根节点,它的左支为红时,那只需变色即可（产生新高度）
+            else if(p_root==null && p_root.getLeft()!=null &&  p_root.getLeft().getColor() == Node.RED)
+            {
+
+                p_root.getLeft().setColor(Node.BLANK);
 
             }
-            else if(Node.BLANK == root.getColor()
-                    && root == p_root.getRight())
+            //父节点为祖父节点的左节点,并且插入节点的左子节点不存在或者为红时
+            else if(Node.LEFT == checkLR(root,p_root)
+                    &&(node.getLeft() ==null|| node.getLeft().getColor()!=Node.RED))
             {
-                p_root.setColor(Node.BLANK);
                 turnLeft(node);
-                fixBalance(root);
+                fixBalance(node);
+
+            }
+            //父节点为祖父节点的左节点,并且插入节点的左子节点为红时
+            else if(Node.LEFT == checkLR(root,p_root)
+                    &&(node.getLeft() !=null&&node.getLeft().getColor()==Node.RED))
+            {
+                turnLeft(node);
+                fixBalance(node);
 
             }
             //父节点为红色,则该父节点肯定为祖父的左支
@@ -384,6 +387,27 @@ public class MyTreeMap  {
             else {
                 node.setColor(Node.BLANK);
            }
+        }*/
+        //右支 (想办法变为左支)
+        else if(Node.RIGHT == checkLR(node,node.getParent())){
+            Node root = node.getParent();
+            if(node.getLeft()==null ||node.getLeft().getColor() == Node.BLANK){
+                if(root.getColor() == Node.RED){
+                    turnLeft(node);
+                    fixBalance(node);
+                }else{
+                    turnLeft(node);
+                    fixBalance(root);
+                }
+
+            }
+             else{
+                node.getLeft().setColor(Node.BLANK);
+                turnRight(node.getLeft());
+                turnLeft(node.getLeft());
+                fixBalance(node.getLeft());
+
+            }
         }
 
     }

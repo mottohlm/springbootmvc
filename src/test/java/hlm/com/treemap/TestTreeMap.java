@@ -1,5 +1,6 @@
 package hlm.com.treemap;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -7,20 +8,14 @@ public class TestTreeMap {
 
     public static void main(String[] args){
 
+       // final  int[] list = {8,6,5,7,10,15,9,12,2,1};
+        final int[] list = {12,45,5,16,10,1,9,8,20,14,88,46,123,123};
+
+
         MyTreeMap mtm = new MyTreeMap();
-
-        mtm.put(8,"小明8");
-        mtm.put(6,"小明6");
-        mtm.put(5,"小明5");
-        mtm.put(7,"小明7");
-        mtm.put(10,"小明10");
-        mtm.put(15,"小明15");
-        mtm.put(9,"小明9");
-        mtm.put(12,"小明12");
-        mtm.put(2,"小明2");
-        mtm.put(1,"小明1");
-
-
+        for(int i :list){
+            mtm.put(i,"小明"+i);
+        }
 
         List<Object> i = mtm.listNode();
         for(Object o : i){
@@ -29,8 +24,30 @@ public class TestTreeMap {
         System.out.println(mtm.get(5));
         System.out.println(mtm.get(8));
         System.out.println(mtm.getSize());
+        System.out.println(list.length);
 
 
+    }
+
+    class testNode {
+        public  int key ;
+        public  String value ;
+
+        public int getKey() {
+            return key;
+        }
+
+        public void setKey(int key) {
+            this.key = key;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        public void setValue(String value) {
+            this.value = value;
+        }
     }
 }
 
