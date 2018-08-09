@@ -9,7 +9,9 @@ public class TestTreeMap {
     public static void main(String[] args){
 
        // final  int[] list = {8,6,5,7,10,15,9,12,2,1};
-        final int[] list = {12,45,5,16,10,1,9,8,20,14,88,46,123,123};
+        //final int[] list = {12,45,5,16,10,1,9,8,20,14,88,46,123,123};
+        final int[] list = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+       // final int[] list = {13,12,11,10,9,8,7,6,5,4,3,2,1};
 
 
         MyTreeMap mtm = new MyTreeMap();
