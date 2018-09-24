@@ -1,10 +1,5 @@
 package com.hlm.annotation;
 
-import org.omg.CORBA.SystemException;
-import org.omg.CORBA.portable.InputStream;
-import org.omg.CORBA.portable.InvokeHandler;
-import org.omg.CORBA.portable.OutputStream;
-import org.omg.CORBA.portable.ResponseHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,9 +7,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**

@@ -3,8 +3,8 @@ package com.hlm.annotation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@MyAop(value = "MyCacheImpl")
-//@MyAop(value = "FlowImpl")
+//@MyAop(value = "MyCacheImpl")
+@MyAop(value = "FlowImpl")
 public class Test implements TestInterface {
 
     Logger log = LoggerFactory.getLogger(Test.class);
