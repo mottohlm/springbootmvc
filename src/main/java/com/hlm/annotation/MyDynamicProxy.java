@@ -12,13 +12,21 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
  * 我的动态代理类
  */
 public class MyDynamicProxy implements InvocationHandler {
+
+    private static Map<String,FlowInterface> flowMap = new HashMap<String,FlowInterface>();
+    static {
+        flowMap.put("MyCacheImpl" ,new MyCacheImpl());
+        flowMap.put("FlowImpl" ,new FlowImpl());
+    }
 
     Logger log = LoggerFactory.getLogger(MyDynamicProxy.class);
 
@@ -36,22 +44,37 @@ public class MyDynamicProxy implements InvocationHandler {
     /**
      * 获取入参的代理对象方法
      * @param clazz
-     * @param flowInterface
      * @param <T>
      * @return
      */
-    public synchronized  static<T> T getProxyInstants(Class<T> clazz , FlowInterface flowInterface){
+    public synchronized  static<T> T getProxyInstants(Class<T> clazz ){
 
         //优先在自己的缓存内寻找
         MyDynamicProxy newProxy = myMap.get(clazz) ;
         if(newProxy != null){
             return (T)newProxy.getProxy() ;
         }
+
         //找不到则新建一个
         newProxy = new MyDynamicProxy();
         try{
             //先为目标类生成目标对象(如果该类中有一些自动注入的属性会有什么情况呢)
             T target = clazz.newInstance();
+
+            //未使用aop注解则直接返回自身
+            MyAop ap = clazz.getAnnotation(MyAop.class);
+
+            if(ap == null){
+                return  target ;
+            }
+            String val = ap.value() ;
+            FlowInterface flowInterface = null;
+            if(val == null || val.equals("")){
+                return  target ;
+            }else{
+                flowInterface = flowMap.get(ap.value());
+            }
+
             Annotation[] l = clazz.getDeclaredAnnotations();
             //生成代理对象
             T proxy = (T) Proxy.newProxyInstance(target.getClass().getClassLoader(),

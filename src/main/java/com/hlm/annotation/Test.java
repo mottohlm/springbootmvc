@@ -3,6 +3,8 @@ package com.hlm.annotation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@MyAop(value = "MyCacheImpl")
+//@MyAop(value = "FlowImpl")
 public class Test implements TestInterface {
 
     Logger log = LoggerFactory.getLogger(Test.class);
@@ -20,7 +22,6 @@ public class Test implements TestInterface {
     @MyCache(value="Test" , key="{#id}")
     @Override
     public String do3(Long id) {
-        log.info("从数据库取得结果");
         return "我是do3的结果";
     }
 
