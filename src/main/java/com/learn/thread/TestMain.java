@@ -2,6 +2,7 @@ package com.learn.thread;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.Callable;
 
 public class TestMain {
 
@@ -57,4 +58,33 @@ public class TestMain {
         return sb.toString().substring(0,sb.length()-1) ;
     }
 
+    class SendGift implements Callable<String>{
+
+        private String gift ;
+        private Map<String,String> resultMap ;
+
+        public SendGift(String gift ,Map<String,String> resultMap ){
+            this.gift = gift ;
+            this.resultMap = resultMap ;
+        }
+
+        public  String getGift(){
+            return this.gift;
+        }
+        @Override
+        public String call() throws Exception {
+            Random r = new Random();
+            int code = r.nextInt(100)+1;
+            code = code%5;
+            String result = resultMap.get(code+"") ;
+
+            //一个循环设置花2秒
+            Thread.sleep(2000);
+            return result ;
+        }
+    }
+
+    public static void doByThread(){
+
+    }
 }
